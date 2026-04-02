@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <title>Daniel Pérez - Web Developer</title>
+    <link href="./page/index.css" rel="stylesheet" />
+  </head>
+  <body class="page">
+    <nav class="navbar">
+      <div class="navbar__logo">Daniel Pérez</div>
+      <ul class="navbar__links">
+        <li class="navbar__item">
+          <a class="navbar__link" href="#home">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="#about">About</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="#projects">Projects</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="page__content">
+      <header id="home" class="header page__section">
+        <div class="header__content">
+          <span class="header__greeting">Hi! I'm Daniel</span>
+          <h1 class="header__title">Web Developer</h1>
+          <p class="header__subtitle">
+            Transform ideas into clean, functional and user-centered digital
+            experiences. Constant learner and problem solver.
+          </p>
+          <a href="#projects" class="btn btn-primary">View my work</a>
+        </div>
+      </header>
+      <main class="content" id="main__content">
+        <section id="about" class="about page__section">
+          <div class="container">
+            <h2 class="page__section-title">About Me</h2>
+            <div class="about__content">
+              <div class="about__text">
+                <p>
+                  I'm a computer engineering graduate passionate about
+                  technology in constant evolution. Currently, I'm specializing
+                  in the fullstack web development through an intensive
+                  bootcamp. My transition into web development stems from the
+                  curiosity to understand "how things work behind the scenes"
+                  and the desire to build useful tools.
+                </p>
+                <p>
+                  Although I'm just starting my journey in the professional
+                  sector, I stand out for my ability to learn independently,
+                  adaptability and resilience in the face of console errors.
+                  What motivates me is to write clean code and tackle challenges
+                  that push me out of my comfort zone.
+                </p>
+              </div>
+              <div class="about__skills_container">
+                <h3>My Current Stack</h3>
+                <div class="about__skill-tags">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript (ES6+)</span>
+                  <span>Git & GitHub</span>
+                  <span>BEM methodology</span>
+                  <span>Figma</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="projects" class="projects page__section">
+          <ul class="projects__list"></ul>
+        </section>
+        <section id="contact" class="contact page__section">
+          <div class="container">
+            <h2 class="page__section-title">Want to talk?</h2>
+            <p class="contact__text">
+              Currently I'm looking for oportunities as a Junior Web Developer.
+              If you have a position available, a project in mind or simply want
+              to connect, feel free to reach out!
+            </p>
+            <div class="contact__links">
+              <a href="mailto:tu-correo@email.com" class="contact__button-email"
+                >Send me an e-mail</a
+              >
+              <a
+                href="https://linkedin.com/in/tu-perfil"
+                target="_blank"
+                class="contact__button-linkedin"
+                >My LinkedIn</a
+              >
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer page__section">
+        <div class="container">
+          <p class="footer__copyright">© 2026 Daniel Pérez Cruz</p>
+        </div>
+      </footer>
+    </div>
+    <template id="template__project">
+      <li class="project">
+        <h3 class="project__title">Project Title</h3>
+        <p class="project__objective">Project Objective</p>
+        <ul class="project__problems"></ul>
+        <ul class="project__results"></ul>
+        <p class="project__conclusion">Project Conclusion</p>
+        <div class="project__links">
+          <button class="project__link-code"><a href="#">View Code</a></button>
+          <button class="project__link-live"><a href="#">View Live</a></button>
+        </div>
+      </li>
+    </template>
+    <template id="template__project_problem">
+      <li class="project__problem">
+        <p class="project__problem-description">Problem description</p>
+        <img class="project__problem-image" src="#" alt="Problem image" />
+      </li>
+    </template>
+    <template id="template__project_result">
+      <li class="project__result">
+        <p class="project__result-description">Result description</p>
+        <img class="project__result-image" src="#" alt="Result image" />
+      </li>
+    </template>
+    <script type="module" src="./page/index.js"></script>
+  </body>
+</html>

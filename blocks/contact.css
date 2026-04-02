@@ -1,0 +1,45 @@
+.contact {
+  font-family: "Inter", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact__text {
+  margin: 0 auto 2rem auto;
+  color: #475569;
+}
+
+.contact__links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contact__button-email {
+  background-color: #2563eb;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.contact__button-email:hover {
+  background-color: #1e40af;
+}
+
+.contact__button-linkedin {
+  background-color: #0a66c2;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.contact__button-linkedin:hover {
+  background-color: #084d9e;
+}

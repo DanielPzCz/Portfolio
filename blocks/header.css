@@ -1,0 +1,43 @@
+.header {
+  font-family: "Inter", Arial, sans-serif;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.header__content {
+  max-width: 800px;
+}
+
+.header__greeting {
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.header__title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.header__subtitle {
+  font-size: 1.2rem;
+  color: #475569;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+@media screen and (max-width: 544px) {
+  .header {
+    min-height: 85px;
+  }
+
+  .header__logo {
+    width: 126px;
+    height: 24px;
+    margin: 0 0 0 7px;
+  }
+}
