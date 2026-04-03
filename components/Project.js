@@ -1,9 +1,9 @@
-export default class Card {
+export default class Project {
   constructor(
-    { isLiked, _id, title, link },
+    { _id, title, link },
     templateSelector,
-    handleImageClick,
-    handleLikeClick,
+    handleCodeClick,
+    handleDemoClick,
     handleDeleteClick,
   ) {
     this._title = title;
@@ -20,7 +20,7 @@ export default class Card {
   _getTemplate() {
     return document
       .querySelector(this._templateSelector)
-      .content.querySelector(".card")
+      .content.querySelector(".project")
       .cloneNode(true);
   }
 
@@ -49,6 +49,26 @@ export default class Card {
 
   generateCard() {
     this._element = this._getTemplate();
+
+    this._projectTitle = this._element.querySelector(".project__title");
+    this._projectObjectiveTitle = this._element.querySelector(
+      ".project__objective-title",
+    );
+    this._projectObjective = this._element.querySelector(".project__objective");
+    this._projectProblemTitle = this._element.querySelector(
+      ".project__problem-title",
+    );
+    this._projectProblem = this._element.querySelector(".project__problem");
+    this._projectResultsTitle = this._element.querySelector(
+      ".project__results-title",
+    );
+    this._projectResult = this._element.querySelector(".project__result");
+    this._projectConclusionTitle = this._element.querySelector(
+      ".project__conclusion-title",
+    );
+    this._projectConclusion = this._element.querySelector(
+      ".project__conclusion",
+    );
 
     this._image = this._element.querySelector(".card__image");
     this._titleElement = this._element.querySelector(".card__title");
