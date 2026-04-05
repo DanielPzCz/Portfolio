@@ -1,0 +1,35 @@
+.links {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.link-code,
+.link-linkedin {
+  background-color: #2563eb;
+  color: white;
+  border: 2px solid #2563eb;
+}
+
+.link-code:hover,
+.link-linkedin:hover {
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+.link-demo,
+.link-email {
+  background-color: transparent;
+  color: #0f172a;
+  border: 2px solid #0f172a;
+}
+
+.link-demo:hover,
+.link-email:hover {
+  background-color: #0f172a;
+  color: white;
+}

@@ -6,7 +6,7 @@
 }
 
 .header__content {
-  max-width: 800px;
+  padding: 0 10%;
 }
 
 .header__greeting {
@@ -30,9 +30,15 @@
   max-width: 600px;
 }
 
-@media screen and (max-width: 544px) {
-  .header {
-    min-height: 85px;
+@media screen and (max-width: 1080px) {
+  .header__content {
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__content {
+    padding: 0 2%;
   }
 
   .header__logo {

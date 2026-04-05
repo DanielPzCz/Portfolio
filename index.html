@@ -40,7 +40,9 @@
       <main class="content" id="main__content">
         <section id="about" class="about page__section">
           <div class="container">
-            <h2 class="page__section-title">About Me</h2>
+            <h2>
+              <a class="page__section-title" href="#about">About Me</a>
+            </h2>
             <div class="about__content">
               <div class="about__text">
                 <p>
@@ -62,9 +64,11 @@
               <div class="about__skills_container">
                 <h3>My Current Stack</h3>
                 <div class="about__skill-tags">
+                  <span>Python</span>
                   <span>HTML5</span>
                   <span>CSS3</span>
                   <span>JavaScript (ES6+)</span>
+                  <span>REST APIs</span>
                   <span>Git & GitHub</span>
                   <span>BEM methodology</span>
                   <span>Figma</span>
@@ -74,24 +78,33 @@
           </div>
         </section>
         <section id="projects" class="projects page__section">
-          <ul class="projects__list"></ul>
+          <div class="container">
+            <h2>
+              <a class="page__section-title" href="#projects">My Projects</a>
+            </h2>
+            <div class="project__content">
+              <ul class="projects__list"></ul>
+            </div>
+          </div>
         </section>
         <section id="contact" class="contact page__section">
           <div class="container">
-            <h2 class="page__section-title">Want to talk?</h2>
+            <h2>
+              <a class="page__section-title" href="#contact">Want to talk?</a>
+            </h2>
             <p class="contact__text">
               Currently I'm looking for oportunities as a Junior Web Developer.
               If you have a position available, a project in mind or simply want
               to connect, feel free to reach out!
             </p>
             <div class="contact__links">
-              <a href="mailto:tu-correo@email.com" class="contact__button-email"
+              <a class="links link-email" href="mailto:tu-correo@email.com"
                 >Send me an e-mail</a
               >
               <a
+                class="links link-linkedin"
                 href="https://linkedin.com/in/tu-perfil"
                 target="_blank"
-                class="contact__button-linkedin"
                 >My LinkedIn</a
               >
             </div>
@@ -107,19 +120,22 @@
     <template id="template__project">
       <li class="project">
         <h3 class="project__title">Project Title</h3>
+
         <h4 class="project__objective-title">Objective</h4>
         <p class="project__objective">Project Objective</p>
+
         <h4 class="project__problem-title">Problems</h4>
-        <p class="project__problem">Project Problem</p>
         <ul class="project__problems"></ul>
+
         <h4 class="project__results-title">Results</h4>
-        <p class="project__result">Project Result</p>
         <ul class="project__results"></ul>
+
         <h4 class="project__conclusion-title">Conclusion</h4>
         <p class="project__conclusion">Project Conclusion</p>
+
         <div class="project__links">
-          <button class="project__link-code"><a href="#">View Code</a></button>
-          <button class="project__link-live"><a href="#">View Live</a></button>
+          <a class="links link-code" href="#" target="_blank">View Code</a>
+          <a class="links link-demo" href="#" target="_blank">View Live</a>
         </div>
       </li>
     </template>
